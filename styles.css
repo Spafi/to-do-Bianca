@@ -1,0 +1,50 @@
+.border-red {
+    border: 2px solid red;
+}
+
+.border-blue {
+    border: 2px solid blue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(123, 121, 121);
+    border-radius: 5px;
+    padding: 5px 5px;
+    margin-bottom: 5px;
+}
+
+.in-progress-todo {
+    background-color: rgb(155, 240, 212);
+}
+
+.completed-todo {
+    background-color: rgb(240, 158, 155);
+}
+
+.to-do-container {
+    padding: 5px;
+    border: 1px solid rgb(123, 121, 121);
+}

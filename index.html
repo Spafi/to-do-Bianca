@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>To Do</title>
+        <link
+            rel="stylesheet"
+            href="styles.css"
+        />
+        <script
+            src="script.js"
+            defer
+        ></script>
+    </head>
+
+    <body>
+        <!-- START: Main container -->
+        <main>
+            <!-- START: Add to-do container -->
+            <div>
+                <input
+                    type="text"
+                    placeholder="Add To-Do"
+                    id="add-todo-input"
+                />
+                <button id="add-todo-button">Add</button>
+            </div>
+            <!-- END: Add to-do container -->
+
+            <!-- START: In progress to-do container -->
+            <div class="to-do-container">
+                <p>To-dos in progress</p>
+                <div id="in-progress-todo-container"></div>
+            </div>
+            <!-- END: In progress to-do container -->
+
+            <!-- START: Completed to-do container -->
+            <div class="to-do-container">
+                <p>Completed To-dos</p>
+                <div class="todo completed-todo">
+                    <p>Buy eggs</p>
+                    <button>Delete</button>
+                </div>
+                <div class="todo completed-todo">
+                    <p>Buy tomatoes</p>
+                    <button>Delete</button>
+                </div>
+            </div>
+            <!-- END: Completed to-do container -->
+        </main>
+    </body>
+</html>
